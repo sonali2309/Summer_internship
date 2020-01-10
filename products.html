@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Products</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+
+<!--style-->
+<style type="text/css">
+	  	
+	  	h3{
+	  		
+	  		margin-top: 80px;
+	  		padding-left: 20px;
+	  		text-align: left;
+	  		padding-top: 20px;
+	  		font-size: 20px;
+	  		text-decoration: underline;
+	  		font-weight: bold;
+	  		font-family: sans-serif;
+	  		margin-right: 60%;
+	  	}
+	 
+	  	p{
+	  		
+	  		margin-top: 10px;
+	  		padding-left: 20px;
+	  		text-align: left;
+	  		padding-top: 10px;
+	  		padding-bottom: 10px;
+	  		font-size: 18px;
+	  		font-weight: initial;
+	  		font-family: sans-serif;
+	  		margin-right: 10px;
+	  		
+	  	}
+	  	
+	  	#products{
+			margin-top: 10px;
+			border-top: solid lightgrey 2px;
+		}
+		
+	    #register-btn{
+	  	    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+			box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+	  		margin-top: 100px; 
+	  		float: right;
+	  		width: 300px;
+	  		height: 80px;
+	  		margin-bottom: 50px;
+
+	  	}
+	   #register-btn span{
+	   		font-size: 30px;
+	   }	
+	   #register-btn  #checkout{
+	   		font-size: 40px;
+	   }
+	   #register-btn #proceed{
+	   	   font-size: 18px;
+	   }
+	   #products #first{ color: grey; }
+	   #products #second{color: grey;}
+	   #products #third{color: grey;}
+	   #products #fourth{color: grey;}
+	   #products #fifth{color: grey;}
+	  
+	    @media(max-width: 1057px){
+	    	h3{
+	    	
+	    		width: 100vw;
+				text-align: center;
+				margin-top: 20px;
+	    	}
+	    	p{
+				margin-top: 10px;
+				width: 95vw;
+				text-align: center;
+			}
+	    }
+	   
+  @media(max-width: 1283px){
+  		.footer {
+  			display: block;
+  			width:100vw;
+  		}
+  		.footer nav{
+  			width: 100vw;
+  		display: flex;
+  		}
+  		.footer nav ul{
+  			display: flex;
+  			width: 100vw;
+  		}
+  		.footer nav ul #headings{
+  			margin-top: 10px;
+  			margin-left: -30px;
+  			
+  		}
+  		.footer nav ul li{
+  			display: flex;
+            margin-left: -40px;
+  			margin-top: 90px; 
+  			margin-right: 50px;
+  			
+  		}
+  		.footer nav ul li a{
+  		    display:flex;
+  		    padding-right: -10vw;
+  		}
+
+  	}
+
+  	@media(max-width: 905px){
+  		.footer nav ul {
+  			display: block;
+  		}
+  		.footer nav ul li{
+  			margin-top: -2px;
+  		}
+  	}
+
+  	@media(min-width: 320px){
+  		#products h4{
+  			font-weight: bold;
+  			font-size: 18px;
+  			margin-left:50px;
+  		}
+  		#products #price{
+            margin-left: 55vw;
+            margin-top: -30px;
+  		}
+  		#products ol h4{
+  			color: #ff8c00;
+  			margin-left: 10px;
+  			margin-top: 40px;
+  			font-size: 17px;
+  		}
+  		#products ol li{
+  			font-size: 16px;
+  			margin-right: 60%;
+  			margin-top: 30px;
+  		}
+  		#products ul{
+  			list-style: none;
+  			padding-left: 0px;
+  			margin-right: 27%;
+  			margin-left: 55%;
+  			margin-top: 203px;
+  			
+  		}
+  		#products ul li{
+  			margin-top: 77px;
+  		}
+  		#products #first{
+  			margin-top:-1790px;
+  		}
+  		#products #cart ul{
+  			margin-right: 5px;
+  			margin-left: 75%;
+  		}
+  		#products #cart ul li{
+  			margin-top: 95px;
+  		}
+  		#products #cfirst{margin-top:-1695px;}
+  		#products #csecond{margin-top: 225px;}
+  		#products #cthird{margin-top: 225px;}
+  		#products #cfourth{margin-top: 225px;}
+  		#products #cfifth{margin-top: 225px;}
+  		
+
+        #register-btn{
+	  		height: 70px;
+	  		margin-top: 200px;
+	  		width:250px;
+	  		margin-right: 30px;
+
+	  	}	
+	   #register-btn  #checkout{
+	   		font-size: 30px;
+	   }
+	   #register-btn #proceed{
+	   	   font-size: 20px;
+	   }
+  	}
+  	@media(min-width: 333px){
+        #products ul li{
+        	margin-top: 98px;
+        }
+  		#products #first{
+  			margin-top: -1810px;
+  		}
+  		#products #third{
+  			margin-top: 220px;
+  		}
+  		#products #fourth{
+  			margin-top: 225px;
+  		}
+  		#products #fifth{
+  			margin-top: 220px;
+  		}
+  		#products ul{
+  			margin-top: 220px;
+  		}
+  		#products #cart ul{
+  			margin-right: 0px;
+  			margin-left: 79%;
+  		}
+  		#products #cart ul li{
+  			margin-top: 98px;
+  		}
+  		#products #cfirst{margin-top:-1675px;}
+  		#products #csecond{margin-top: 219px;}
+  		#products #cthird{margin-top: 219px;}
+  		#products #cfourth{margin-top: 225px;}
+  		#products #cfifth{margin-top: 222px;}
+  	}
+  	@media(min-width: 356px){
+  		#products ul li{
+        	margin-top: 75px;
+        }
+  		#products #first{
+  			margin-top: -1680px;
+  		}
+  		#products #second{
+  			margin-top: 224px;
+  		}
+  		#products #third{
+  			margin-top: 225px;
+  		}
+  		#products #fourth{
+  			margin-top: 220px;
+  		}
+  		#products #fifth{
+  			margin-top: 225px;
+  		}
+  		#products ul{
+  			margin-top: 220px;
+  		}
+  		#products #cart ul{
+  			margin-right: 0px;
+  			margin-left: 79%;
+  		}
+  		#products #cart ul li{
+  			margin-top: 77px;
+  		}
+  		#products #cfirst{margin-top:-1550px;}
+  		#products #csecond{margin-top: 222px;}
+  		#products #cthird{margin-top: 222px;}
+  		#products #cfourth{margin-top: 220px;}
+  		#products #cfifth{margin-top: 222px;}
+
+  	}
+  	@media(min-width: 358px){
+  		#products ul li{
+        	margin-top: 75px;
+        }
+  		#products #first{
+  			margin-top: -1570px;
+  		}
+  		#products #second{
+  			margin-top: 205px;
+  		}
+  		#products #third{
+  			margin-top: 198px;
+  		}
+  		#products #fourth{
+  			margin-top: 200px;
+  		}
+  		#products #fifth{
+  			margin-top: 203px;
+  		}
+  		
+  		#products #cart ul li{
+  			margin-top: 75px;
+  		}
+  		#products #cfirst{margin-top:-1458px;}
+  		#products #csecond{margin-top: 205px;}
+  		#products #cthird{margin-top: 198px;}
+  		#products #cfourth{margin-top: 200px;}
+  		#products #cfifth{margin-top: 202px;}
+
+  	}  	
+  	@media(min-width: 367px){
+  		
+  		#products #first{
+  			margin-top: -1460px;
+  		}
+  		#products #second{
+  			margin-top: 180px;
+  		}
+  		#products #third{
+  			margin-top: 180px;
+  		}
+  		#products #fourth{
+  			margin-top: 180px;
+  		}
+  		#products #fifth{
+  			margin-top: 180px;
+  		}
+  		
+  		#products #cfirst{margin-top:-1372px;}
+  		#products #csecond{margin-top: 180px;}
+  		#products #cthird{margin-top: 180px;}
+  		#products #cfourth{margin-top: 180px;}
+  		#products #cfifth{margin-top: 180px;}
+
+  	}  	
+  	@media(min-width: 440px){
+  		
+  		#products #first{
+  			margin-top: -1355px;
+  		}
+  		#products #second{
+  			margin-top: 160px;
+  		}
+  		#products #third{
+  			margin-top: 160px;
+  		}
+  		#products #fourth{
+  			margin-top: 154px;
+  		}
+  		#products #fifth{
+  			margin-top: 160px;
+  		}
+  		
+  		#products #cfirst{margin-top:-1285px;}
+  		#products #csecond{margin-top: 160px;}
+  		#products #cthird{margin-top: 160px;}
+  		#products #cfourth{margin-top: 153px;}
+  		#products #cfifth{margin-top: 160px;}
+
+  	} 
+  	@media(min-width: 472px){
+  		#products ul li{
+        	margin-top: 55px;
+        }
+        #products #cart ul li{
+  			margin-top: 55px;
+  		}
+  		
+  		#products #first{
+  			margin-top: -1223px;
+  		}
+  		#products #second{
+  			margin-top: 157px;
+  		}
+  		#products #third{
+  			margin-top: 155px;
+  		}
+  		#products #fourth{
+  			margin-top: 157px;
+  		}
+  		#products #fifth{
+  			margin-top: 157px;
+  		}
+  		
+  		#products #cfirst{margin-top:-1160px;}
+  		#products #csecond{margin-top: 160px;}
+  		#products #cthird{margin-top: 153px;}
+  		#products #cfourth{margin-top: 155px;}
+  		#products #cfifth{margin-top: 160px;}
+
+  	} 
+  	  	@media(min-width: 578px){
+  		#products ul li{
+        	margin-top: 55px;
+        }
+        #products #cart ul li{
+  			margin-top: 55px;
+  		}
+  		
+  		#products #first{
+  			margin-top: -1110px;
+  		}
+  		#products #second{
+  			margin-top: 133px;
+  		}
+  		#products #third{
+  			margin-top: 133px;
+  		}
+  		#products #fourth{
+  			margin-top: 133px;
+  		}
+  		#products #fifth{
+  			margin-top: 133px;
+  		}
+  		
+  		#products #cfirst{margin-top:-1065px;}
+  		#products #csecond{margin-top: 135px;}
+  		#products #cthird{margin-top: 133px;}
+  		#products #cfourth{margin-top: 130px;}
+  		#products #cfifth{margin-top: 135px;}
+
+  	}
+    
+  	@media(min-width: 768px){
+  	    #products h4{
+  			font-size: 20px;
+  		}
+  		#products ol h4{
+  			font-size: 19px;
+  		}
+  		#products ol li{
+  			font-size: 17px;
+  	    }
+  	    
+  	    #products #first{
+  			margin-top: -1165px;
+  		}
+  		#products #second{
+  			margin-top: 145px;
+  		}
+  		#products #third{
+  			margin-top: 145px;
+  		}
+  		#products #fourth{
+  			margin-top: 145px;
+  		}
+  		#products #fifth{
+  			margin-top: 145px;
+  		}
+  		
+  		#products #cfirst{margin-top:-1115px;}
+  		#products #csecond{margin-top: 145px;}
+  		#products #cthird{margin-top: 145px;}
+  		#products #cfourth{margin-top: 145px;}
+  		#products #cfifth{margin-top: 145px;}
+  	}    
+
+  	@media(min-width: 825px){
+  	    #products ul li{
+        	margin-top: 60px;
+        }
+        #products #cart ul li{
+  			margin-top: 60px;
+  		}
+  		
+  	    
+  	    #products #first{
+  			margin-top: -1055px;
+  		}
+  		#products #second{
+  			margin-top: 120px;
+  		}
+  		#products #third{
+  			margin-top: 115px;
+  		}
+  		#products #fourth{
+  			margin-top: 115px;
+  		}
+  		#products #fifth{
+  			margin-top: 115px;
+  		}
+  		
+  		#products #cfirst{margin-top:-1030px;}
+  		#products #csecond{margin-top: 120px;}
+  		#products #cthird{margin-top: 120px;}
+  		#products #cfourth{margin-top: 110px;}
+  		#products #cfifth{margin-top: 120px;}
+  	}
+  	@media(min-width: 959px){
+  	    #products ul li{
+        	margin-top: 40px;
+        }
+        #products #cart ul li{
+  			margin-top: 40px;
+  		}
+  		
+  	    #products #first{
+  			margin-top: -915px;
+  		}
+  		#products #second{
+  			margin-top: 115px;
+  		}
+  		#products #third{
+  			margin-top: 110px;
+  		}
+  		#products #fourth{
+  			margin-top: 115px;
+  		}
+  		#products #fifth{
+  			margin-top: 110px;
+  		}
+  		
+  		#products #cfirst{margin-top:-890px;}
+  		#products #csecond{margin-top: 110px;}
+  		#products #cthird{margin-top: 110px;}
+  		#products #cfourth{margin-top: 120px;}
+  		#products #cfifth{margin-top: 110px;}
+  	}
+  </style>
+</head>
+<body>
+	<div class="logo">
+			<img src="logo.png">
+			<div class="dropdown">
+				<select data-style="btn-info" class="selectpicker show-menu-arrow" data-size="5" data-live-search="true">
+					<option>INDIA</option>
+					<option>UNITED STATES</option>
+					<option>PHILIPPINES</option>
+					<option>JAMAICA</option>
+					<option>CANADA</option>
+					<option>MARSHALL ISLANDS</option>
+					<option>NIGERIA</option>
+					<option>KUWAIT</option>
+					<option>QATAR</option>
+					<option>SAUDI ARABIA</option>
+					<option>UAE</option>
+					<option>OMAN</option>
+				</select>
+				
+			</div>
+		
+	</div>
+
+	<header>
+		<nav id="menu">
+				<ul>
+					<li class="home"> <a href="home.html"><i class="fa fa-home" aria-hidden="true"></i> </a></li>
+					<li><a href="students.html">Students/Parents</a></li>
+					<li><a href="teachers.html">Teachers</a></li>
+					<li><a href="schools.html">Schools</a></li>
+					<li><a  class="active" href="products.html">Products</a></li>
+					<li><a href="demo.html">Demo</a></li>
+					<span style="font-size:40px;cursor:pointer;margin-left: -50px;"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
+				</ul>
+			</nav>
+			<span class="menu-toggle" style="font-size:26px;cursor:pointer" onclick="openNav()">&#9776;</span>
+	
+	</header>
+	<script>
+		function openNav() {
+		  document.getElementById("menu").style.width = "340%";
+		}
+
+		function closeNav() {
+		  document.getElementById("menu").style.width = "0";
+		}
+	</script>
+	<h3>EducoSoft Products</h3>
+		<p>
+			Educosoft is providing different products for<span style="font-weight: bold"> Grade 1 to 5  </span>and  <span style="color: #00007D;font-weight: bold;">Exclusive Online and<span style="font-weight: bold;color: red"> Online + Printed Workbook</span> 
+		</p>
+	<div id="products">
+		<h4>Product</h4>
+		<h4 id="price">Price</h4>
+		<ol>
+			<h4> Grade 1</h4>	
+				<li>Grade 1 Digital Practice Sheet online (DPS1-OL) </li>
+				<li>Grade 1 Digital Practice Sheet online with Printed Workbook (DPS1-OL with PW)</li>
+			<h4> Grade 2</h4>	
+				<li>Grade 2 Digital Practice Sheet online (DPS2-OL) </li>
+				<li>Grade 2 Digital Practice Sheet online with Printed Workbook (DPS2-OL with PW)</li>
+			<h4> Grade 3</h4>	
+				<li>Grade 3 Digital Practice Sheet online (DPS3-OL) </li>
+				<li>Grade 3 Digital Practice Sheet online with Printed Workbook (DPS3-OL with PW)</li>
+			<h4> Grade 4</h4>	
+				<li>Grade 4 Digital Practice Sheet online (DPS4-OL) </li>
+				<li>Grade 4 Digital Practice Sheet online with Printed Workbook (DPS4-OL with PW) </li>
+			<h4> Grade 5</h4>	
+				<li>Grade 5 Digital Practice Sheet online (DPS5-OL) </li>
+				<li>Grade 5 Digital Practice Sheet online with Printed Workbook (DPS5-OL with PW)</li>
+		</ol>
+		<ul id="first">
+			<li>Rs #####</li>
+			<li>Rs #####</li>
+		</ul>	
+		<ul id="second">	
+			<li>Rs #####</li>
+			<li>Rs #####</li>
+		</ul>
+		<ul id="third">	
+			<li>Rs #####</li>
+			<li>Rs #####</li>
+		</ul>
+		<ul id="fourth">	
+			<li>Rs #####</li>
+			<li>Rs #####</li>
+		</ul>
+		<ul id="fifth">	
+			<li>Rs #####</li>
+			<li>Rs #####</li>
+		</ul>
+       <!-------------- cart------------------------>
+    <div id="cart">   
+        <ul id="cfirst">
+			<li><a href="#">Add to cart</a></li>
+			<li><a href="#">Add to cart</a></li>
+		</ul>	
+		<ul id="csecond">	
+			<li><a href="#">Add to cart</a></li>
+			<li><a href="#">Add to cart</a></li>
+		</ul>
+		<ul id="cthird">	
+			<li><a href="#">Add to cart</a></li>
+			<li><a href="#">Add to cart</a></li>
+		</ul>
+		<ul id="cfourth">	
+			<li><a href="#">Add to cart</a></li>
+			<li><a href="#">Add to cart</a></li>
+		</ul>
+		<ul id="cfifth">	
+			<li><a href="#">Add to cart</a></li>
+			<li><a href="#">Add to cart</a></li>
+		</ul>
+	</div>
+
+
+
+      <button id="register-btn" type="button"class="btn btn-success"><span id="proceed">Proceed to Secure</span> <br><span >CHECKOUT </span> <span id="checkout"><i class="fa fa-angle-double-right" aria-hidden="true"></i></span></button></td> 
+		
+	</div>
+
+			<!--footer-->
+
+	<footer>
+	    <div style="margin-top: 500px;" class="footer">
+			<nav>
+			    <ul id="footer">
+					<li id="headings">ABOUT EDUCOSOFT</li><br>
+				<li id="abt">Educo International Inc. (Educo) was founded by <br>
+                    Dr. Man M. Sharma in 1985 to provide quality<br> education tools, products, and services globally.
+                <br>
+                	Our Vision is to provide quality education solutions<br> accessible anytime, anywhere Internet service is<br> available.
+                </li>
+				
+			
+				</ul>
+			</nav>	
+			<nav>
+			    <ul id="footer">
+					<li id="headings">COMPANY</li><br>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Home</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">About Us</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Testimonials</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Terms of Use</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Privacy Policy</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Links</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Site Map</a></li>
+			
+				</ul>
+			</nav>	
+			<nav>
+			    <ul id="footer">
+					<li id="headings">PRODUCT</li><br>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">School K-12</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Self Learning</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Digital Tutor</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Educo LAN</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Educo LMS</a></li><br>
+			
+				</ul>
+			</nav>	
+			<nav>
+			    <ul id="footer">
+					<li id="headings">SUPPORT</li><br>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Help</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">System Requirements</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">F.A.Q</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Feedback</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Contact Us</a></li><br>
+			
+				</ul>
+			</nav>	
+		</div>	
+</footer>
+
+
+
+</body>
+</html>		

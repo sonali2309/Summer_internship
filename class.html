@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>For Students/Parents</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+  
+  <!--style-->
+  <style type="text/css">
+  	h3{
+  		font-weight: bold;
+  		font-family: Arial, Helvetica, sans-serif;
+  		text-decoration: underline;
+  		text-align: left;
+  		margin-left: 35vw;
+  		margin-top: 70px;
+  	}
+  	#index h4{
+  		font-weight: bold;
+  		margin-left: 10px;
+  		margin-top: 50px;
+  	}
+  	#index ul{
+  		list-style: none;
+  		scroll-behavior: smooth;
+  		overflow-y: scroll;
+  		height: 350px;
+  		width: 300px;
+
+  	}
+  	#index ul li{
+  		font-size: 16px;
+  		font-weight: bold;
+  		margin-left: -15px;
+  		margin-top: 10px;
+  	}
+  	#box1{
+  		border: solid #BA55D3 2px;
+  		margin-left: 30%;
+  		margin-top:-370px; 
+  		margin-right: 40%;
+  	}
+  	#box1 h4{
+  		font-size: 20px;
+  		margin:0px;
+  		background: #BA55D3;
+  		line-height: 30px;
+  		padding-left: 20px;
+  		color: #ffff;
+
+  	}
+  	#index p{
+  		color: grey;
+  		font-size: 18px;
+  		margin-top: 20px;
+  		margin-left:5%;
+
+  	}
+  	.b{
+       margin-left: 15%;
+       border-radius: 5px;
+       color: #ffff;
+       font-size:16px;
+       height: 30px;
+       margin-bottom: 10px;
+  	}
+  	#box2{
+  		border: solid #32CD32 2px;
+  		margin-left: 30%;
+  		margin-top:20px; 
+  		margin-right: 40%;
+  	}
+  	#box2 h4{
+  		font-size: 20px;
+  		margin:0px;
+  		background: #32CD32;
+  		line-height: 30px;
+  		padding-left: 20px;
+  		color: #ffff;
+  	}
+  	#box3{
+  		border: solid #1ba1b2 2px;
+  		margin-left: 65%;
+  		margin-top:-380px; 
+  		margin-right:5%;
+
+  		
+  	}
+  	#box3 h4{
+  		font-size: 20px;
+  		margin:0px;
+  		background: #1ba1b2;
+  		line-height: 30px;
+  		padding-left: 20px;
+  		color: #ffff;
+  	}
+  	#box4{
+  		border: solid #ff8c00 2px;
+  		margin-left: 65%;
+  		margin-top:20px; 
+  		margin-right:5%;
+
+  		
+  	}
+  	#box4 h4{
+  		font-size: 20px;
+  		margin:0px;
+  		background: #ff8c00;
+  		line-height: 30px;
+  		padding-left: 20px;
+  		color: #ffff;
+  	}
+@media(max-width: 1092px){
+    #box3{
+    	margin-left: 62%
+    }
+    #box4{
+    	margin-left: 62%
+    }
+
+}
+@media(max-width: 1223px){
+   #box1{
+       margin-left: 33%;
+   }
+   #box2{
+   	margin-left: 33%;
+   }
+   #box3{
+   	margin-right: 11%;
+   	margin-left: 63%
+   }
+   #box4{
+   	margin-right: 11%;
+   	margin-left: 63%
+   }
+
+}
+@media(max-width: 945px){
+	h3{
+		margin-left: 310px;
+	}
+   #box1{
+     margin-right: 10%;
+     margin-left: 310px;
+   }
+   #box2{
+    margin-right: 10%;
+    margin-left: 310px;
+   }
+   #box3{
+   	margin-top: 20px;
+   	margin-right: 10%;
+   	margin-left: 310px;
+   }
+   #box4{
+   	margin-top: 20px;
+   	margin-right: 10%;
+   	margin-left: 310px;
+   }
+
+}
+@media (max-width: 625px){
+	
+	h3{
+		margin-left: 40px;
+		font-size: 20px;
+	}
+	#box1{
+		margin-top: 50px;
+		margin-left: 20px;
+	}
+	#box2{margin-left: 20px;}
+	#box3{margin-left: 20px;}
+	#box4{margin-left: 20px;}
+}
+
+  	@media(max-width: 1283px){
+  		.footer {
+  			display: block;
+  			width:100vw;
+  		}
+  		.footer nav{
+  			width: 100vw;
+  		display: flex;
+  		}
+  		.footer nav ul{
+  			display: flex;
+  			width: 100vw;
+  		}
+  		.footer nav ul #headings{
+  			margin-top: 10px;
+  			margin-left: -30px;
+  			
+  		}
+  		.footer nav ul li{
+  			display: flex;
+            margin-left: -40px;
+  			margin-top: 90px; 
+  			margin-right: 50px;
+  			
+  		}
+  		.footer nav ul li a{
+  		    display:flex;
+  		    padding-right: -10vw;
+  		}
+
+  	}
+  	
+
+  	@media(max-width: 905px){
+  		.footer{
+  		   margin-top: 300px;
+  		}
+  		.footer nav ul {
+  			display: block;
+  		}
+  		.footer nav ul li{
+  			margin-top: -2px;
+  		}
+  	}
+  
+  </style>	  	
+</head>
+<body>
+	<div class="logo">
+			<img src="logo.png">
+			<div class="dropdown">
+				<select data-style="btn-info" class="selectpicker show-menu-arrow" data-size="5" data-live-search="true">
+					<option>INDIA</option>
+					<option>UNITED STATES</option>
+					<option>PHILIPPINES</option>
+					<option>JAMAICA</option>
+					<option>CANADA</option>
+					<option>MARSHALL ISLANDS</option>
+					<option>NIGERIA</option>
+					<option>KUWAIT</option>
+					<option>QATAR</option>
+					<option>SAUDI ARABIA</option>
+					<option>UAE</option>
+					<option>OMAN</option>
+				</select>
+				
+			</div>
+		
+	</div>
+	<header>
+			<nav id="menu">
+				<ul>
+					<li class="home"> <a href="home.html"><i class="fa fa-home" aria-hidden="true"></i> </a></li>
+					<li><a href="students.html">Students/Parents</a></li>
+					<li><a href="teachers.html">Teachers</a></li>
+					<li><a href="schools.html">Schools</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="demo.html">Demo</a></li>
+					<span style="font-size:40px;cursor:pointer;margin-left: -50px;"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
+				</ul>
+			</nav>
+			<span class="menu-toggle" style="font-size:26px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		
+	</header> 
+	<script>
+		function openNav() {
+		  document.getElementById("menu").style.width = "340%";
+		}
+
+		function closeNav() {
+		  document.getElementById("menu").style.width = "0";
+		}
+	</script>
+		<h3>Class 2 : Number Lines</h3>
+
+		<div id="index">
+			<h4>Class 2</h4>
+			<ul>
+				<li style="margin-left: -20px;color: #ff8c00">Numbers</li>
+				<li>Counting</li>
+				<li>Number Lines</li>
+				<li>Hundered,Tens and Ones</li>
+				<li>Even and Odd</li>
+				<li>Forming Numbers</li>
+				<li>Comparing Numbers</li>
+				<li>Ordering Numbers</li>
+				<li>Numberals and Number Names</li>
+				<li>Place value and Face value</li>
+				<li>Expanded form of number</li>
+				
+			</ul>
+			<div id="box1">
+				<h4>Online Practice Test</h4>
+				<p>Text Text Text Text Text Text<br>Text Text Text Text Text Text<br>Text Text Text Text Text Text</p>
+				<button style=" background: #BA55D3;font-weight: bold;" class="b" type="button">Try Practice Session</button>
+			</div>
+			<div id="box2">
+				<h4>Online Homework</h4>
+				<p>Text Text Text Text Text Text<br>Text Text Text Text Text Text<br>Text Text Text Text Text Text</p>
+				<button style=" background: #32CD32;font-weight: bold;" class="b" type="button">Try HomeWork</button>
+			</div>
+			<div id="box3">
+				<h4>Online Test</h4>
+				<p>Text Text Text Text Text Text<br>Text Text Text Text Text Text<br>Text Text Text Text Text Text</p>
+				<button style=" background: #1ba1b2;font-weight: bold;" class="b" type="button">Try Test</button>
+			</div>
+			<div id="box4">
+				<h4>Printed Worksheets</h4>
+				<p>Text Text Text Text Text Text<br>Text Text Text Text Text Text<br>Text Text Text Text Text Text</p>
+				<button style=" background: #ff8c00;font-weight: bold;" class="b" type="button">View Worksheet</button>
+			</div>
+			
+		</div>
+<!--footer-->
+	<footer>
+    <div class="footer">
+		<nav>
+		    <ul id="footer">
+				<li id="headings">ABOUT EDUCOSOFT</li><br>
+				<li id="abt">Educo International Inc. (Educo) was founded by <br>
+                    Dr. Man M. Sharma in 1985 to provide quality<br> education tools, products, and services globally.
+                <br>
+                	Our Vision is to provide quality education solutions<br> accessible anytime, anywhere Internet service is<br> available.
+                </li>
+				
+		
+			</ul>
+		</nav>	
+		<nav>
+		    <ul id="footer">
+				<li id="headings">COMPANY</li><br>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Home</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">About Us</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Testimonials</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Terms of Use</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Privacy Policy</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Links</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Site Map</a></li>
+		
+			</ul>
+		</nav>	
+		<nav>
+		    <ul id="footer">
+				<li id="headings">PRODUCT</li><br>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">School K-12</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Self Learning</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Digital Tutor</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Educo LAN</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Educo LMS</a></li><br>
+		
+			</ul>
+		</nav>	
+		<nav>
+		    <ul id="footer">
+				<li id="headings">SUPPORT</li><br>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Help</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">System Requirements</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">F.A.Q</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Feedback</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Contact Us</a></li><br>
+		
+			</ul>
+		</nav>	
+	</div>	
+</footer>		
+</body>
+</html>

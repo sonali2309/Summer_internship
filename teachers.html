@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>For Teachers</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+  
+  <!--style-->
+  <style type="text/css">
+	  	
+	  	h3{
+	  		
+	  		margin-top: 80px;
+	  		padding-left: 20px;
+	  		text-align: left;
+	  		padding-top: 20px;
+	  		font-size: 20px;
+	  		text-decoration: underline;
+	  		font-weight: bold;
+	  		font-family: sans-serif;
+	  		margin-right: 60%;
+	  	}
+
+        h4{
+	  		font-size: 24px;
+	  		font-weight: bold;
+	  		margin-left: 8%;
+	  		text-decoration: underline;
+	  		color: #0000B3; 
+	  		
+
+	  	}
+	  	p{
+	  		
+	  		margin-top:10px;
+	  		padding-left: 20px;
+	  		text-align: left;
+	  		padding-top: 10px;
+	  		padding-bottom: 10px;
+	  		font-size: 18px;
+	  		font-weight: initial;
+	  		font-family: sans-serif;
+	  		margin-right: 10%;
+	  	}
+	  	#register-btn{
+	  		width:30%;
+	  		border: solid #00aba9 3px;
+	  		float: right;
+	  		font-size: 25px;
+	  	    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+			box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.75);
+	  		font-weight: bold;
+	  		margin-right: 100px;
+	  		border-radius: 15px;
+	  		margin-top: -100px;	  
+
+	  	}
+	  	#for-teachers{
+			margin-top: 10px;
+			border-top: solid lightgrey 2px;
+		}
+
+		#for-teachers ul{
+			list-style: none;
+		}	
+		#for-teachers ul li{
+			font-size: 20px;
+			font-family: serif;
+			font-weight: bold;
+			margin-left: -30px;
+			margin-right: 45%;
+		} 
+		#for-teachers h4{
+            margin-left: 15px;
+            margin-right: 55%;
+		}
+		#for-teachers p{
+			font-size: 20px;
+			font-family: serif;
+			font-weight: bold;
+			margin-right: 50%;
+			margin-left: 20px;
+			margin-top: 150px;
+		} 
+		
+		#img1{
+			width:500px;
+			height: 300px;
+			margin-left: 59vw;
+			margin-top: -85px;
+			margin-right: 20px;
+		}
+		#img2{
+			width:500px;
+			height: 300px;
+			margin-left: 59vw;
+			margin-top: -170px;
+			margin-right: 20px;
+		}
+		#report{
+			margin-top: 150px;
+		}
+		#img3{
+			width:500px;
+			height: 300px;
+			margin-left: 59vw;
+			margin-top: -140px;
+			margin-right: 20px;
+		}
+		@media(max-width: 1265px){
+			#img1{
+				width: 400px;
+			}
+			#img2{
+                width: 400px;
+			}
+			#img3{
+               width: 400px;
+			}
+		}
+		@media(max-width: 1061px){
+			#img1{
+				margin-top:30px;
+				margin-left: 20px;
+				width: 500px;
+			}
+			#for-teachers p{
+				margin-top:40px;
+			}
+			#img2{
+				margin-top:30px;
+				margin-left: 20px;
+				width: 500px;
+			}
+			#report{
+				margin-top: 30px;
+			}
+			#img3{
+				margin-top:30px;
+				margin-left: 20px;
+				width: 500px;
+			}
+			#for-teachers h4{
+				width: 80vw;
+			}
+			#for-teachers p{
+				width: 80vw;
+				text-align: left;
+				padding-left: 0px;
+			}
+			#for-teachers ul li{
+			    width: 80vw;	
+			}
+        
+		}
+	
+		@media(max-width: 1283px){
+  		.footer {
+  			display: block;
+  			width:100vw;
+  		}
+  		.footer nav{
+  			width: 100vw;
+  		display: flex;
+  		}
+  		.footer nav ul{
+  			display: flex;
+  			width: 100vw;
+  		}
+  		.footer nav ul #headings{
+  			margin-top: 10px;
+  			margin-left: -30px;
+  			
+  		}
+  		.footer nav ul li{
+  			display: flex;
+            margin-left: -40px;
+  			margin-top: 90px; 
+  			margin-right: 50px;
+  			
+  		}
+  		.footer nav ul li a{
+  		    display:flex;
+  		    padding-right: -10vw;
+  		}
+
+  	}
+
+  	@media(max-width: 905px){
+  		.footer nav ul {
+  			display: block;
+  		}
+  		.footer nav ul li{
+  			margin-top: -2px;
+  		}
+  	}
+
+  	@media(max-width: 1057px){
+			h3{
+				width: 100vw;
+				text-align: center;
+				margin-top: 20px;
+
+			}
+			#register-btn{
+				width: 50%;
+				font-size: 20px;
+				margin-top:5px;
+				align-self: : center;
+				margin-right: 25vw;	
+				height:50px;	
+				
+			}
+			p{
+				margin-top: 10px;
+				width: 90vw;
+				text-align: center;
+			}
+			#for-teachers{
+				margin-top:80px;
+			}
+			h4{
+				font-size: 20px;
+				margin-left: 6vw;
+			}
+
+            
+            #for-teachers ul{
+            	font-size: 18px;
+            }
+         }   
+         @media(max-width: 587px){
+         	#img1{
+         		width: 400px;
+         	}
+         	#img2{
+         		width: 400px;
+         	}
+         	#img3{
+         		width: 400px;
+         	}
+         }
+         @media(max-width: 412px){
+         	#for-teachers h4{
+         		width: 90vw;
+         	}
+         	#for-teachers ul li{
+         		width:90vw; 
+         	}
+         	#for-teachers p{
+         		width: 90vw;
+         	}
+         	@media(max-width: 414px){
+         		#img1{
+         			width: 300px;
+         		}
+         		#img2{
+         			width: 300px;
+         		}
+         		#img3{
+         			width: 300px;
+         		}
+         	}
+         }
+           
+            @media(max-width: 565px){
+				#register-btn{
+					font-size: 16px;
+				}
+            } 	
+   </style>	  	
+
+  </head>
+<body>
+	<div class="logo">
+			<img src="logo.png">
+			<div class="dropdown">
+				<select data-style="btn-info" class="selectpicker show-menu-arrow" data-size="5" data-live-search="true">
+					<option>INDIA</option>
+					<option>UNITED STATES</option>
+					<option>PHILIPPINES</option>
+					<option>JAMAICA</option>
+					<option>CANADA</option>
+					<option>MARSHALL ISLANDS</option>
+					<option>NIGERIA</option>
+					<option>KUWAIT</option>
+					<option>QATAR</option>
+					<option>SAUDI ARABIA</option>
+					<option>UAE</option>
+					<option>OMAN</option>
+				</select>
+				
+			</div>
+		
+	</div>
+	<header>
+			<nav id="menu">
+				<ul>
+					<li class="home"> <a href="home.html"><i class="fa fa-home" aria-hidden="true"></i> </a></li>
+					<li><a href="students.html">Students/Parents</a></li>
+					<li><a  class="active" href="teachers.html">Teachers</a></li>
+					<li><a href="schools.html">Schools</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="demo.html">Demo</a></li>
+					<span style="font-size:40px;cursor:pointer;margin-left: -50px;"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
+				</ul>
+			</nav>
+			<span class="menu-toggle" style="font-size:26px;cursor:pointer" onclick="openNav()">&#9776;</span>
+		
+	</header>  
+	<script>
+		function openNav() {
+		  document.getElementById("menu").style.width = "340%";
+		}
+
+		function closeNav() {
+		  document.getElementById("menu").style.width = "0";
+		}
+	</script>
+	
+		<h3>EducoSoft For Teachers</h3>
+		<p>
+			It is a best resource for you to teach math and assess your<br> students better than before.
+
+		</p>
+		<button id="register-btn" type="button"class="btn btn-success">REGISTER</button></td> 
+		<div id="for-teachers">
+			<h4>Get your student and classes Online</h4>
+			<ul>
+				<li><i class="fa fa-star" aria-hidden="true"></i> Upload excel ﬁle for class roaster with student name and email id</li>
+			</ul>	
+			<img id="img1"src="#">
+			<p>Select the way you want your student practice online.</p>
+			<img id="img2"src="#">
+			<h4 id="report">Reports</h4>
+			<ul>
+				<li><i class="fa fa-star" aria-hidden="true"></i> Monitor Students Progress Report </li>
+				<li><i class="fa fa-star" aria-hidden="true"></i> Track Activity Report </li>
+				<li><i class="fa fa-star" aria-hidden="true"></i> Score and Performance Report</li>
+			</ul>
+			<img id="img3"src="#">
+
+		</div>	
+
+		<!--footer-->
+
+	<footer>
+	    <div style="margin-top: 200px;" class="footer">
+			<nav>
+			    <ul id="footer">
+					<li id="headings">ABOUT EDUCOSOFT</li><br>
+					<li id="abt">Educo International Inc. (Educo) was founded by <br>
+	                    Dr. Man M. Sharma in 1985 to provide quality<br> education tools, products, and services globally.
+	                <br>
+	                	Our Vision is to provide quality education solutions<br> accessible anytime, anywhere Internet service is<br> available.
+	                </li>
+				
+				</ul>
+			</nav>	
+			<nav>
+			    <ul id="footer">
+					<li id="headings">COMPANY</li><br>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Home</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">About Us</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Testimonials</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Terms of Use</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Privacy Policy</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Links</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Site Map</a></li>
+			
+				</ul>
+			</nav>	
+			<nav>
+			    <ul id="footer">
+					<li id="headings">PRODUCT</li><br>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">School K-12</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Self Learning</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Digital Tutor</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Educo LAN</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Educo LMS</a></li><br>
+			
+				</ul>
+			</nav>	
+			<nav>
+			    <ul id="footer">
+					<li id="headings">SUPPORT</li><br>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Help</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">System Requirements</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">F.A.Q</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Feedback</a></li>
+					<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Contact Us</a></li><br>
+			
+				</ul>
+			</nav>	
+		</div>	
+</footer>
+
+
+
+</body>
+</html>			

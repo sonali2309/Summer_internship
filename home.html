@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lower Grade webpages</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+
+
+<!--style-->
+<style type="text/css">
+   
+    @media(max-width:1285px){
+    	
+    	
+    .customer{
+		width: 80%;
+		display: block;
+		margin-left: 0px;
+		margin-left: 10vw;
+	}
+
+    .login{
+    	position: relative;
+    	margin-right: 100px;
+    	margin-top:-525px;
+
+    }
+      #app{
+		 width:80vw;
+		 margin-top: 20px;
+		 margin-left: 20px;
+		 height: 200px;
+
+
+	}
+
+	#one{
+	  width:90vw;
+	  height: 25%;
+	  margin-left: 0px;
+	  padding-right: 20px;
+	  font-size: 24px;
+	}
+	#two{
+	     width:90vw;
+		  height: 25%;
+		  margin-left: 0px;
+		  padding-right: 20px;
+		  font-size: 24px;
+		  margin-top: 5px;
+	}
+	#three{
+	      width:90vw;
+		  height: 25%;
+		  margin-left: 0px;
+		  padding-right: 20px;
+		  font-size: 24px;
+		  margin-top: 5px;
+	}
+	#four{
+		width:90vw;
+		  height: 25%;
+		  margin-left: 0px;
+		  padding-right: 20px;
+		  font-size: 24px;
+		  margin-top: 5px;
+	   
+	}
+    
+    .classes{
+		display: block;
+		width: 70%;
+		margin-left: 15vw;
+	}
+	.footer{
+		margin-top: 1000px;
+	}
+}
+
+@media(max-width: 900px) {
+	.login{
+		width: 85vw;
+		margin-top:40px; 
+		float: left;
+		margin-left: 30px;
+	}
+
+	 .customer{
+		margin-top:360px;
+		display: block;
+		margin-left: -10px
+	}
+}
+@media(max-width: 458px){
+	.dropdown {
+        position: absolute;
+        margin-left: 80px;
+	}
+	.header{
+		margin-top:10px; 
+	}
+	#btn2{
+		width: 70%;
+		font-size: 16px;
+	}
+	#img{
+		width:300px;
+	}
+}
+@media(max-width: 320px){
+	#one{
+		font-size: 20px;
+	}
+	#two{
+		font-size: 20px;
+	}
+	#three{
+		font-size: 20px;
+	}
+	#four{
+		font-size: 20px;
+	}
+
+	#img{
+		width:250px;
+	}
+
+	#btn{
+       width: 70%;
+	}
+	.customer{
+		width: 100%;
+	}
+}
+
+@media(max-width: 1283px){
+  		.footer {
+  			display: block;
+  			width:100vw;
+  		}
+  		.footer nav{
+  			width: 100vw;
+  		display: flex;
+  		}
+  		.footer nav ul{
+  			display: flex;
+  			width: 100vw;
+  		}
+  		.footer nav ul #headings{
+  			margin-top: 10px;
+  			margin-left: -30px;
+  			
+  		}
+  		.footer nav ul #abt{
+  			margin-left: -10vw;
+  		}
+  		.footer nav ul li{
+  			display: flex;
+            margin-left: -40px;
+  			margin-top: 90px; 
+  			margin-right: 50px;
+  			
+  		}
+  		.footer nav ul li a{
+  		    display:flex;
+  		    padding-right: -10vw;
+  		}
+
+  	}
+
+  	@media(max-width: 905px){
+  		.footer nav ul {
+  			display: block;
+  		}
+  		.footer nav ul li{
+  			margin-top: -2px;
+  		}
+  	}
+</style>
+
+  
+</head>
+<body>
+	<div class="logo">
+			<img src="logo.png">
+			<div class="dropdown">
+				<select data-style="btn-info" class="selectpicker show-menu-arrow" data-size="5" data-live-search="true">
+					<option>INDIA</option>
+					<option>UNITED STATES</option>
+					<option>PHILIPPINES</option>
+					<option>JAMAICA</option>
+					<option>CANADA</option>
+					<option>MARSHALL ISLANDS</option>
+					<option>NIGERIA</option>
+					<option>KUWAIT</option>
+					<option>QATAR</option>
+					<option>SAUDI ARABIA</option>
+					<option>UAE</option>
+					<option>OMAN</option>
+				</select>
+				
+			</div>
+		
+	</div>
+	<header>
+		
+			<nav id="menu">
+				<ul>
+					
+					<li class="home"> <a class="active" href="home.html"><i class="fa fa-home" aria-hidden="true"></i> </a></li>
+					<li><a href="students.html">Students/Parents</a></li>
+					<li><a href="teachers.html">Teachers</a></li>
+					<li><a href="schools.html">Schools</a></li>
+					<li><a href="products.html">Products</a></li>
+					<li><a href="demo.html">Demo</a></li>
+					<span style="font-size:40px;cursor:pointer;margin-left: -50px;"><a style="color: #ffff;text-decoration: none;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></span>
+				</ul>
+
+			</nav>
+			<span class="menu-toggle" style="font-size:26px;cursor:pointer" onclick="openNav()">&#9776;</span>
+			
+		
+	</header>
+	<script>
+function openNav() {
+  document.getElementById("menu").style.width = "340%";
+}
+
+function closeNav() {
+  document.getElementById("menu").style.width = "0";
+}
+</script>
+	
+	<img id="img"src="#" >
+	<div id="app">
+		<div id="one">
+			Any Time Anywhere 24 X 7
+		</div>
+		<div id="two">
+			Animated Tutorials
+		</div>
+		<div id="three">
+			Unlimited Questions
+		</div>
+		<div id="four">
+			Printed Worksheets
+		</div>
+	</div>	
+	<div class="login">
+		<h3><strong>&nbsp; &nbsp; &nbsp;LOGIN</strong></h3>
+		<form id="form">
+
+			<input type="text" name="Email" class="form-control" size="30"placeholder="Enter email" ><br>
+		    <input type="password" class="form-control" name="password" placeholder="Enter password"><br>
+		    <a id="forget"href="#">Forgot Password</a>
+		    <br><br>
+		    <button id="btn" type="button"class="btn btn-info">LOGIN</button>
+		</form>
+    
+	</div>
+
+    <div class="customer">
+    	<nav>
+				<ul id="customer">
+					<li id="OH">For Students/Parents</li>
+					<li>Animated Tutorials</li>
+					<li>Online Test</li>
+					<li>Progress Report</li>
+					<li>Printed Worksheet</li>
+					<li><button onclick="window.location.href ='students.html';" id="btn1" type="button"class="btn btn-default">Learn More</button></li>
+					<li><button id="btn2" type="button"class="btn btn-info">Register Now</button></li>
+				</ul>
+
+		</nav>		
+
+		<nav>
+				<ul id="customer">
+					<li id="OH">For Teachers</li>
+					<li>Get Your Class Online</li>
+					<li>Create Assignments</li>
+					<li>Monitor Student Progress</li>
+					<li>Motivate Your Student</li>
+					<li><button onclick="window.location.href ='teachers.html';" id="btn1" type="button"class="btn btn-default">Learn More</button></li>
+					<li><button id="btn2" type="button"class="btn btn-info">Register Now</button></li>
+				</ul>
+		</nav>		
+		<nav>
+				<ul id="customer">
+					<li id="OH">For Schools</li>
+					<li>Online classrooms</li>
+					<li>Teachers Assistance</li>
+					<li>Online Assesments</li>
+					<li>Progress Reports</li>
+					<li><button onclick="window.location.href ='schools.html';" id="btn1" type="button"class="btn btn-default">Learn More</button></li>
+					<li><button id="btn2" type="button"class="btn btn-info">Register Now</button></li>
+				</ul>
+        </nav>
+			
+		
+	</div>	
+	<h3 style="color: blue;font-family: serif;text-decoration: underline;"><strong>CLASSES AVAILABLE<strong></strong></h3>
+	<h3 style="font-size: 28px;">Select Your Class and Topic to Begin Online Test</h3>
+
+	<div class="classes">
+    	<nav>
+				<ul id="classes">
+					<li id="OH">Class 1</li>
+					<li><a href="#">Numbers</li>
+					<li><a href="#">Additions</li>
+					<li><a href="#">Subtraction</li>
+					<li><a href="#">Weight</li>
+					<li><a href="#">Geometry</li><br>
+					<li id="topics-link"><a href="#"> See All Topics</a></li>
+			
+				</ul>
+
+		</nav>		
+
+		<nav>
+				<ul id="classes">
+					<li id="OH">Class 2</li>
+					<li><a href="class.html">Numbers</li>
+					<li><a href="#">Additions</li>
+					<li><a href="#">Subtraction</li>
+					<li><a href="#">Weight</li>
+					<li><a href="#">Geometry</li><br>
+					<li id="topics-link"><a href="#"> See All Topics</a></li>
+					
+				</ul>
+		</nav>		
+		<nav>
+				<ul id="classes">
+					<li id="OH">Class 3</li>
+					<li><a href="#">Numbers</li>
+					<li><a href="#">Additions</li>
+					<li><a href="#">Subtraction</li>
+					<li><a href="#">Weight</li>
+					<li><a href="#">Geometry</li><br>
+					<li id="topics-link"><a href="#"> See All Topics</a></li>
+				</ul>
+        </nav>
+        <nav>
+				<ul id="classes">
+					<li id="OH">Class 4</li>
+					<li><a href="#">Numbers</li>
+					<li><a href="#">Additions</li>
+					<li><a href="#">Subtraction</li>
+					<li><a href="#">Weight</li>
+					<li><a href="#">Geometry</li><br>
+					<li id="topics-link"><a href="#">See All Topics</a></li>
+				</ul>
+        </nav>
+        <nav>
+				<ul id="classes">
+					<li id="OH">Class 5</li>
+					<li><a href="#">Numbers</li>
+					<li><a href="#">Additions</li>
+					<li><a href="#">Subtraction</li>
+					<li><a href="#">Weight</li>
+					<li><a href="#">Geometry</li><br>
+					<li id="topics-link"><a href="#"> See All Topics</a></li>
+				</ul>
+        </nav>
+					
+	</div>	
+	
+	<footer>
+    <div class="footer">
+		<nav>
+		    <ul id="footer">
+				<li id="headings">ABOUT EDUCOSOFT</li><br>
+				<li id="abt">Educo International Inc. (Educo) was founded by <br>
+                    Dr. Man M. Sharma in 1985 to provide quality<br> education tools, products, and services globally.
+                <br>
+                	Our Vision is to provide quality education solutions<br> accessible anytime, anywhere Internet service is<br> available.
+                </li>
+				
+		
+			</ul>
+		</nav>	
+		<nav>
+		    <ul id="footer">
+				<li id="headings">COMPANY</li><br>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Home</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">About Us</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Testimonials</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Terms of Use</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Privacy Policy</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Links</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Site Map</a></li>
+		
+			</ul>
+		</nav>	
+		<nav>
+		    <ul id="footer">
+				<li id="headings">PRODUCT</li><br>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">School K-12</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Self Learning</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Digital Tutor</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Educo LAN</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Educo LMS</a></li><br>
+		
+			</ul>
+		</nav>	
+		<nav>
+		    <ul id="footer">
+				<li id="headings">SUPPORT</li><br>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Help</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">System Requirements</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">F.A.Q</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Feedback</a></li>
+				<li><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>&nbsp;<a href="#">Contact Us</a></li><br>
+		
+			</ul>
+		</nav>	
+	</div>	
+</footer>		
+
+</body>
+</html>
